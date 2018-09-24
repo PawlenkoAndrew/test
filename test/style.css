@@ -1,19 +1,25 @@
 body{
-	margin: 0;
-	font-size:20px;
+    font-size: 20px;
+    margin: 0;
+
 }
+.items{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
 a{
+	display: block;
 	color:#FF0000;
 	text-decoration: none;
-    border: 1px solid;
+    border: 1px solid #800080 ;
     background: #1E90FF;
     padding: 10px 10px 10px 10px;
-    margin-top: 20px;
-    position: relative;
-    top: 100px;	
-    left:100px;
     border-radius:5px;
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+    margin-left:5px; 
 }
 a:hover{
 background-color: #fff;
