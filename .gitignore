@@ -1,1 +1,4 @@
-ignore.html
+.idea
+node_modules
+.git
+bash.exe.stackdump
