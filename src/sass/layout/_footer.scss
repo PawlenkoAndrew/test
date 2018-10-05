@@ -1,0 +1,24 @@
+.contacts{
+	background-color: #f0f0f0;
+	margin-top:100px;
+	height: 100px;
+    
+    ul{
+
+    	 list-style-type:none;
+    	 float: right;
+    	 text-align: middle;
+    	 margin-top: 40px;
+    	 li{
+    	 	display: inline-block;
+    	 	a{
+    	 		text-decoration: none;
+				color:$primary-color;
+				padding-left: 15px;
+    	 		&:hover{
+                 color:$hover-color;
+    	 		}
+    	 	}
+    	 }
+    }
+}

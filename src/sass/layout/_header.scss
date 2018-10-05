@@ -1,0 +1,33 @@
+.logo{
+
+	img{
+		vertical-align: center;
+		display: block;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 60px;
+
+	}
+}
+.menu{
+
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			font-family:$head-line-font-family;
+			font-size:14px;
+			text-transform: uppercase;
+			margin-left:60px;
+			margin-right:60px;
+
+			a{
+				text-decoration: none;
+				color:$primary-color;
+				&:hover{
+					color:$hover-color;
+				}
+			}
+		}
+	}
+}
