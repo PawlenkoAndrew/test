@@ -1,16 +1,22 @@
 
 body {
   font-family: $base-font-family;
-  min-width:1062px;
+	color:$primary-color;
+ 
   
     }
 #wrapper{
+	position:relative;
 	overflow: hidden;
 	margin: 0 auto;
 
 }
 
-main{
+.content{
+
+	max-width:1062px;
+	position:relative;
+	margin: 0 auto;
 
 	img{
 		display: block;
@@ -35,34 +41,29 @@ main{
 		}
 	h1{
       font-family: $title-font-family;
-      color:$primary-color;
       font-weight: bold;
 	 }
 	 p{
 	 	font-family: $base-font-family;
-	 	color:$primary-color;
 	 }
 	 h2,
 	 h3,
 	 h4{
         font-family:$base-font-family ;
-        color:$primary-color;
         font-weight: bold;
 	 }
 	 li{
 	 	font-family: $base-font-family;
-	    color:$primary-color;
 	    a{
 	    	color:red;
 	    }
 	 }
-	 blockquote{
+	 q{
 	 	font-family: $base-font-family;
-	    color:$primary-color;
 	    text-align: center;
 	 }
 
+}
 
-	}
 
 

@@ -1,25 +1,28 @@
 .logo{
-
-	img{
-		vertical-align: center;
-		display: block;
-		margin: 0 auto;
 		margin-top: 60px;
 		margin-bottom: 60px;
 
+	a{
+		display: block;
+     text-align: center;
+
+     img{
+		width:119px;
+	 }
 	}
 }
 .menu{
 
 	ul{
 		text-align: center;
+		padding-left: 0;
 		li{
 			display: inline-block;
 			font-family:$head-line-font-family;
 			font-size:14px;
 			text-transform: uppercase;
-			margin-left:60px;
-			margin-right:60px;
+			margin-left:70px;
+			margin-right:70px;
 
 			a{
 				text-decoration: none;
