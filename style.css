@@ -1,0 +1,39 @@
+
+
+
+.triangle{
+	list-style: none;
+	padding-left: 30px;
+
+}
+.triangle li{
+		position:relative;
+		margin-bottom: 15px;
+	
+	
+	}
+
+	.triangle li:before{
+			position:absolute;
+			content:"";
+			left:-30px;
+		border-top: 10px solid transparent ;
+	    border-left: 15px solid blue ;
+	    border-bottom: 10px solid transparent;
+			align-items: center;
+		}
+
+
+		.triangle li:after{
+		 	position:absolute;
+			content:"";
+			left:-30px;
+          border-top: 10px solid transparent ;
+	    border-left: 15px solid yellow ;
+	    border-bottom: 0px solid transparent;
+	    align-items: center;
+		 }
+
+.triangle li:last-child{
+	color:red;
+}
