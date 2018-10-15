@@ -1,0 +1,19 @@
+body {
+  font-family: $base-font-family;
+  font-size: 14px;
+  line-height: 1.7;
+  min-width: 320px;
+  color: $base-text-color;
+}
+
+#wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
