@@ -14,6 +14,39 @@ body{
   margin: 0 auto;
 
 }
+.container{
+   max-width:1280px;
+  margin: 0 auto;
+   
+  }
+.flaticon-settings{ 
+  content: "\f103"; 
+  font-family: "Flaticon";
+  font-size: 30px;
+  font-style: normal; 
+  color:$icon-color;
+}
+.flaticon-diamond-icon { 
+  content: "\f101";
+  font-family: "Flaticon";
+  font-style: normal; 
+  font-size: 30px;
+  color:$icon-color;
+}
+.flaticon-truck { 
+  content: "\f102"; 
+   font-family: "Flaticon";
+  font-style: normal; 
+  font-size: 30px;
+  color:$icon-color;
+}
+.flaticon-edit:before { 
+  content: "\f100";
+  font-family: "Flaticon";
+  font-style: normal; 
+  font-size: 30px;
+  color:$icon-color;
+   }
 
 
 h2{
@@ -68,15 +101,12 @@ body{
   p{
   margin-bottom: 30px;
 
+    }
   }
-
-
-
- }
 }
 
 
-@media (min-width: 768px) and (orientation: landscape){
+@media (min-width: 768px), (orientation: landscape){
 .row{
  padding: 0px 5px 0px 5px ;
  display: flex;
@@ -105,14 +135,13 @@ body{
   margin-bottom: 30px;
 
   }
-
-
-
- }
+  }
 }
   
 
 @media (min-width: 1200px) {
+  
+
   .about_us{
     display:flex;
     flex-wrap: wrap;
@@ -124,23 +153,12 @@ body{
   
     
 }
-
-
-
-.container{
-   max-width:1280px;
-  margin: 0 auto;
-   
-  }
   .row{
    display: flex;
    flex-direction: row;
    margin-bottom:70px ;
    width: 100%;
-          
-
-
-  }
+      }
 
 
 
@@ -149,18 +167,13 @@ body{
   text-align:left;
   padding:0 20px 0  20px;
   width: 50%;
-  
-
-  
   p{
 	margin-bottom: 50px;
-
-  }
+    }
 }
 .column{
   width: 50%;
-  
- }
+  }
 }
 
 
