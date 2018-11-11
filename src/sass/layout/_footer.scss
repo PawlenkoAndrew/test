@@ -1,0 +1,18 @@
+
+
+footer{
+	background-color: $footer-background-color;
+	
+	.copyright-info{
+    display: flex;
+	justify-content: space-between;
+	}
+	ul{
+	
+	}
+	li{
+		list-style-type: none;
+		display: inline-block;
+
+	}
+}
