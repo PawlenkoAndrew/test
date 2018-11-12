@@ -7,13 +7,17 @@ h1{
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 	padding: 0 15px;
 	padding-top: 80px;
 
-	@media (max-width: 1200px) {
+	@media (min-width: 320px) {
 		flex-direction: column;
 		text-align: center;
+	}
+	@media (min-width: 768px)
+	and (orientation: landscape) {
+		flex-direction: row;
+		text-align:left;
 	}
 }
 
@@ -21,10 +25,15 @@ h1{
 		margin: 0 -15px;
 		width: 50%;
 		text-align:left;
+		@media (min-width: 320px){
+			width: 100%;
+			text-align: center;
+		}
 
-		@media (max-width: 1200px) {
-		text-align: center;
-		width: 100%;
+		@media (min-width: 768px)
+		and (orientation: landscape) {
+		text-align: left;
+		width: 50%;
 		
 	}
 
@@ -39,13 +48,25 @@ h1{
 		margin-top: 60px;
 		text-align:left;
 
-		@media (max-width: 1200px) {
+
+		@media (max-width: 320px) {
 		text-align: center;
+		margin: 0 auto;
+
+		}
+
+
 		
-		
+
+		@media (min-width: 768px)
+	    and (orientation: landscape) {
+		text-align:left;
 	}
+
 		
-		.btn{
+		
+		
+		.button{
 			background-color:$red;
 			color:$white;
 			border:none;
@@ -53,30 +74,48 @@ h1{
         background-color: $light-red;
         border:none;
         color:$red;
-       }
+        display: block;
+        margin: 0 auto;
 
-		}
+       }
+   }
 
  }
 .right-column{
 	padding: 50px 0 80px 0;
-	position: relative;
 	width: 50%;
 	margin: 0 -15px;
 
-	@media (max-width: 1200px) {
+	@media (min-width: 320px) {
 		text-align: center;
 		width: 100%;
-		
+		}
+		@media (min-width: 768px)
+		and (orientation: landscape) {
+		text-align: left;
+		width: 50%;
+	}
+	.video{
+		position: relative;
+		margin: 0 auto;
 	}
 	iframe{
+		@media (min-width: 768px)
+		and (orientation: landscape) {
+		text-align: left;
+		position: static;
+		
+	}
+		@media (min-width: 1200px) {
 		box-shadow: -15px -10px 20px  5px rgba(0,0,0,0.4);
 		position: absolute;
 		right: 0;
-		bottom: 0;
-
-
-	}
+		top: 0;
+		}
+		
+	
+	
+}
 }
 
 
