@@ -146,17 +146,33 @@
 								</a>
 							</div>
 							<div class="passages-main">
-								<div class="passages-foto col-sm-12 col-md-12 col-lg-5">
+								<div class="passages-foto col-sm-5 col-md-5 col-lg-5">
 									<img src="images/ipad.png" alt="">
 								</div>
-								<div class="accordeon col-sm-12 col-md-12 col-lg-7 ">
+								<div class="accordeon col-sm-7 col-md-7 col-lg-7 ">
 									<div class="acc-head">
 										<img src="images/bullet.png" alt="">
 										Lorem Ipsum is simply dummy text of the printing and typesetting 
 									</div>
 									<div class="ac-body">
 										
-										Lorem Ipsum is simply dummy text of the printing and typesetting 
+										Industry. Lorem Ipsum has been the industry's standard 
+									</div>
+									<div class="acc-head">
+										<img src="images/bullet.png" alt="">
+										Industry. Lorem Ipsum has been the industry's standard   
+									</div>
+									<div class="ac-body">
+										
+										Industry. Lorem Ipsum has been the industry's standard    
+									</div>
+									<div class="acc-head">
+										<img src="images/bullet.png" alt="">
+										Industry. Lorem Ipsum has been the industry's standard   
+									</div>
+									<div class="ac-body">
+										
+										Industry. Lorem Ipsum has been the industry's standard  
 									</div>
 									<div class="acc-head">
 										<img src="images/bullet.png" alt="">
@@ -164,34 +180,72 @@
 									</div>
 									<div class="ac-body">
 										
-										Industry. Lorem Ipsum has been the industry's standard  
+										Industry. Lorem Ipsum has been the industry's standard   
 									</div>
 									<div class="acc-head">
 										<img src="images/bullet.png" alt="">
-										Dummy text ever since the 1500s, when an unknown printer  
+									Industry. Lorem Ipsum has been the industry's standard   
 									</div>
 									<div class="ac-body">
 										
-										Dummy text ever since the 1500s, when an unknown printer  
+										Industry. Lorem Ipsum has been the industry's standard   
 									</div>
+									<div class="button-area">
+										<div class="secondary-btn">
+											<a class="second-btn" href="#">Read More</a>
+											
+										</div>
+										<div class="secondary-btn">
+											<a class="second-btn" href="#">Download</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</section>
+						<section class="last-info-block">
+							<div class="accordeon col-lg-12 ">
 									<div class="acc-head">
-										<img src="images/bullet.png" alt="">
-										Took a galley of type and scrambled it to make a type specimen book.  
+										<img src="images/plus.png" alt="">
+										Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard 
 									</div>
 									<div class="ac-body">
 										
-										Took a galley of type and scrambled it to make a type specimen book.  
+										Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard
 									</div>
 									<div class="acc-head">
-										<img src="images/bullet.png" alt="">
-										It has survived not only five centuries, but also the 
+										<img src="images/plus.png" alt="">
+									Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book. 
+									</div>
+									<div class="ac-body">
+										
+										Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book.  
+									</div>
+									<div class="acc-head">
+										<img src="images/plus.png" alt="">
+										It has survived not only five centuries, but also the   
 									</div>
 									<div class="ac-body">
 										
 										It has survived not only five centuries, but also the  
 									</div>
-								</div>
-							</div>
+									<div class="acc-head">
+										<img src="images/plus.png" alt="">
+										Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard  
+									</div>
+									<div class="ac-body">
+										
+										Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard   
+									</div>
+									<div class="acc-head">
+										<img src="images/plus.png" alt="">
+										Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book. 
+									</div>
+									<div class="ac-body">
+										
+										Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book.  
+									</div>
 						</section>
 					</div>
 				</div>
@@ -200,13 +254,23 @@
 	</div>
 	<script>
     $(document).ready(function(){
-      $('.soft-for-device').slick();
-  		 $('.carousel-line').slick();
-  });
-
-    $(document).ready(function() {
-	$('.accordeon .acc-head').on('click', f_acc);
+      $('.soft-for-device').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	prevArrow: '<img src="images/arrow left-main.png">',
+	nextArrow:'<img src="images/arrow right-main.png">'
 });
+      $('.carousel-line').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<img src="images/left arrow.png" >' ,
+  nextArrow: '<img src="images/right arrow.png">'
+});
+
+
+	$('.accordeon .acc-head').on('click', f_acc);
  
 function f_acc(){
 //скрываем все кроме того, что должны открыть
@@ -214,5 +278,6 @@ function f_acc(){
 // открываем или скрываем блок под заголовком, по которому кликнули
     $(this).next().slideToggle(200);
 }
+});
     </script>
 </body>
