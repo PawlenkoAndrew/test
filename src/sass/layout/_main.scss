@@ -145,7 +145,9 @@ font-family:$base-font-family;
 	justify-content: center;
 	padding: 0 15px;
 	position: relative;
-	outline: none;	
+	outline: none;
+	align-items: center;
+
 	
 	
 
@@ -161,14 +163,7 @@ font-family:$base-font-family;
 	height: 40px; 
     border: none;
     outline: none;
-    
-
-		@media(min-width: 320px){
-		display: none;
-	}
-	@media(min-width: 768px){
-		display: static;
-	}
+    cursor: pointer;
    
     &:hover{
     	width: 40px;
@@ -186,6 +181,7 @@ font-family:$base-font-family;
 	.third-slide{
 		display: flex;
 		width: 100%;
+
 
 		@media(min-width: 320px){
 		flex-direction: column;
@@ -287,7 +283,7 @@ font-family:$base-font-family;
 			margin: 0 auto;
 
 		&:hover{
-			transform: scale(1.03);
+			transform: scale(1.02);
 			}
 		}
 	}
@@ -344,6 +340,7 @@ font-family:$base-font-family;
 	display: flex;
 	max-width: 700px;
 	margin: 0 auto;
+	align-items: center;
 
 
 	.slick-arrow{
@@ -472,6 +469,7 @@ display: flex;
 }
 .last-info-block{
 	color:$gray;
+	padding-bottom: 30px;
 	
 	.acc-head{
 		border-bottom: 2px solid $gray-lighter;

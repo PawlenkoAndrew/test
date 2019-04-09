@@ -1,1 +1,132 @@
+footer{
+	background-color: $footer-background;
+	color:$footer-letter-color;
+	input[type="email"],
+		[type='text'],
+		textarea{
+		background-color: $input-color;
+		border-bottom: 1px solid $border-input-bottom;
+		border-right: 1px solid $border-input-bottom;
+		border-top:1px solid $border-input-top;
+		border-left:1px solid $border-input-top;
+		border-radius:5px;
+		outline: none;
+		padding:0 5px;
+		min-height: 25px;
+	}
+	input[type="submit"]{
+		background-color: $subscribe-button-color;
+		border-radius:5px;
+		min-height: 25px;
+		color:$button-text-color;
+		text-transform: capitalize;
+		font-size: 14px;
+		border: none;
+		padding: 0 15px;
+		outline: none;
+			&:hover{
+				cursor: pointer;
+				background-color: rgba(231,232,234,0.7);
+			}
+	}
+}
+.footer-head{
+	padding: 20px 10px 30px;
+	display: flex;
+	align-items: center;
+	img{
+		max-width: 64px;
+		max-width: 64px;
 
+	}
+}
+.footer-article{
+
+	padding-left: 10px;
+	padding-right: 0px;
+
+	@media(min-width: 768px){
+		padding-left: 30px;
+		padding-right: 80px;
+	}
+}
+.footer-forms-area{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+		@media(min-width: 768px){
+			flex-direction: row;
+		}
+	.left-column{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		@media(min-width: 768px){
+			text-align: left;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		
+	}
+	.social-links{
+		display: flex;
+		padding-top: 20px;
+		align-items: center;
+		justify-content: flex-start;
+		min-height: 50px;
+		
+		
+		a{
+			margin: 0 15px;
+		}
+
+	}
+}
+.right-column-footer{
+	
+	padding: 0 20px;
+
+}
+.contact-form{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+		@media(min-width: 768px){
+				text-align: left;
+			}
+
+	form{
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: center;
+		@media(min-width: 768px){
+			flex-direction: row;
+		}
+		
+	}
+	.text-line{
+		width: 220px;
+		input{
+			float: left;
+
+		}
+	}
+	textarea{
+		min-height:100px;
+		margin-left: 10px;
+		
+	}
+	input{
+		margin-bottom: 12px;
+		
+	}
+	.submit{
+		float: right;
+	}
+
+}
